@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .logo img {
+        width: 130px;
+    }
+
+    a {
+        display: block;
+        font-size: $medium-size;
+        letter-spacing: .1rem;
+        color: white;
+        padding: 20px 0;
+    }
+
+    #primary {
+        display: flex;
+
+        a {
+            padding: 20px 20px;
+        }
+    }
+
+    .menu-icon img {
+        width: 20px;
+    }
+}

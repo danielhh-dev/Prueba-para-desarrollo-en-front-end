@@ -1,0 +1,46 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Barlow', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111111;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.green-light {
+    position: absolute;
+    top: 900px; left: 100px;
+    width: 250px;
+    height: 250px;
+    background-color: $primary-green;
+    border-radius: 100%;
+}
+.yellow-light {
+    position: absolute;
+    top: 200px; left: 1500px;
+    width: 250px;
+    height: 250px;
+    background-color: $neutral-silver;
+    border-radius: 100%;
+}
+
+.blur {
+    position: absolute;
+    width: 100vw;
+    height: 2000px;
+    backdrop-filter: blur(200px);
+    z-index: 1;
+}
+
+.main-container {
+    width: 68%;
+    margin: 0 auto;
+    z-index: 2;
+}

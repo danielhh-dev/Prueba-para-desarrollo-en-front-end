@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Barlow', sans-serif;
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #111111; }
+
+a {
+  text-decoration: none; }
+
+.green-light {
+  position: absolute;
+  top: 900px;
+  left: 100px;
+  width: 250px;
+  height: 250px;
+  background-color: #058C42;
+  border-radius: 100%; }
+
+.yellow-light {
+  position: absolute;
+  top: 200px;
+  left: 1500px;
+  width: 250px;
+  height: 250px;
+  background-color: #F4F6F3B8;
+  border-radius: 100%; }
+
+.blur {
+  position: absolute;
+  width: 100vw;
+  height: 2000px;
+  backdrop-filter: blur(200px);
+  z-index: 1; }
+
+.main-container {
+  width: 68%;
+  margin: 0 auto;
+  z-index: 2; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+  nav .logo img {
+    width: 130px; }
+  nav a {
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    color: white;
+    padding: 20px 0; }
+  nav #primary {
+    display: flex; }
+    nav #primary a {
+      padding: 20px 20px; }
+  nav .menu-icon img {
+    width: 20px; }
+
+#header {
+  display: flex;
+  width: 100%;
+  margin: 40px 0;
+  color: #F4F6F3; }
+  #header #header-left {
+    width: 80%; }
+    #header #header-left h1 {
+      font-size: 4.8rem;
+      font-weight: 600; }
+  #header #header-right {
+    width: 70%; }
+    #header #header-right p {
+      font-size: 2.8rem;
+      position: relative; }
+    #header #header-right a {
+      display: inline-block;
+      width: 110px;
+      height: 30px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 400;
+      text-align: center;
+      line-height: 2.6rem;
+      color: #F4F6F3;
+      background-color: #63707429;
+      border-radius: 12px;
+      position: relative;
+      top: 20px;
+      left: 490px; }
+    #header #header-right span svg {
+      position: absolute;
+      top: 5px;
+      left: 78px;
+      width: 19px; }
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0; }
+  #hero .hero-middle {
+    width: 40%; }
+    #hero .hero-middle .bitcoin img {
+      width: 550px; }
+  #hero .hero-left {
+    width: 25%; }
+    #hero .hero-left .circle {
+      position: relative;
+      top: 350px;
+      width: 120px;
+      height: 120px;
+      border-radius: 1000px;
+      background-color: #04341c; }
+  #hero .hero-right {
+    width: 25%; }
+    #hero .hero-right .arrow {
+      display: flex;
+      justify-content: end;
+      padding: 30px; }
+      #hero .hero-right .arrow .line {
+        position: relative;
+        top: 290px;
+        width: 0;
+        height: 210px;
+        border-left: 1px solid #F4F6F3; }
+      #hero .hero-right .arrow .arrowhead {
+        position: relative;
+        top: 484px;
+        left: -8px;
+        width: 15px;
+        height: 15px;
+        border-bottom: 1px solid #F4F6F3;
+        border-left: 1px solid #F4F6F3;
+        transform: rotate(-45deg); }
+    #hero .hero-right .arrow-text {
+      position: relative;
+      top: 118px;
+      left: 204px;
+      width: 150px;
+      height: 80px;
+      text-align: center;
+      transform: rotate(90deg); }
+      #hero .hero-right .arrow-text #arrow-title {
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 3.8rem;
+        color: transparent;
+        -webkit-text-stroke: 0.04rem #F4F6F3; }
+
+#content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  width: 100%;
+  height: 500px;
+  color: #F4F6F3; }
+  #content #nosotros {
+    width: 60%; }
+    #content #nosotros-title {
+      font-size: 4rem;
+      font-weight: 600; }
+    #content #nosotros-text > div {
+      padding: 20px 0; }
+    #content #nosotros #vision-title, #content #nosotros #mision-title {
+      font-size: 2.8rem;
+      font-weight: 100;
+      letter-spacing: .1rem; }
+    #content #nosotros #vision-content, #content #nosotros #mision-content {
+      font-size: 1.8rem;
+      padding-top: 20px; }

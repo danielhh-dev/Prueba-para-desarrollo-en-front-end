@@ -1,0 +1,150 @@
+#header {
+    display: flex;
+    width: 100%;
+    margin: 40px 0;
+    color: $neutral-white;
+
+    #header-left {
+        width: 80%;
+
+        h1 {
+            font-size: $big-title-size;
+            font-weight: $semibold;
+        }
+    }
+
+    #header-right{
+        width: 70%;
+
+        p {
+            font-size: $sub-title-size;
+            position: relative;
+        }
+
+        a {
+            @include btn($neutral-grey,$neutral-white,$regular);
+            position: relative;
+            top: 20px;
+            left: 490px;
+        }
+
+        span svg {
+            position: absolute;
+            top: 5px;
+            left: 78px;
+            width: 19px;
+        }
+    }
+}
+
+
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    .hero-middle {
+        width: 40%;
+
+        .bitcoin img {
+            width: 550px;
+        }
+    }
+
+    .hero-left {
+        width: 25%;
+
+        .circle {
+            position: relative;
+            top: 350px;
+            width: 120px;
+            height: 120px;
+            border-radius: 1000px;
+            background-color: $circle-green;
+        }
+    }
+
+    .hero-right {
+        width: 25%;
+
+        .arrow {
+            display: flex;
+            justify-content: end;
+            padding: 30px;
+
+            .line {
+                position: relative;
+                top: 290px;
+                width: 0;
+                height: 210px;
+                border-left: 1px solid $neutral-white;
+            }
+
+            .arrowhead {
+                position: relative;
+                top: 484px;
+                left: -8px;
+                width: 15px;
+                height: 15px;
+                border-bottom: 1px solid $neutral-white;
+                border-left: 1px solid $neutral-white;
+                transform: rotate(-45deg);
+            }
+        }
+
+        .arrow-text {
+            position: relative;
+            top: 118px;
+            left: 204px;
+            width: 150px;
+            height: 80px;
+            text-align: center;
+            transform: rotate(90deg);
+
+            #arrow-title {
+                font-weight: $bold;
+                font-size: $scroll-size;
+                line-height: 3.8rem;
+                color: transparent;
+                -webkit-text-stroke: .04rem $neutral-white;
+            }
+        }
+
+    }
+}
+
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    width: 100%;
+    height: 500px;
+    color: $neutral-white;
+
+    #nosotros {
+        width: 60%;
+
+        &-title {
+            font-size: $title-size;
+            font-weight: $semibold;
+        }
+
+        &-text>div {
+            padding: 20px 0;
+        }
+
+        #vision-title, #mision-title {
+            font-size: $sub-title-size;
+            font-weight: 100;
+            letter-spacing: .1rem;
+        }
+
+        #vision-content, #mision-content {
+            font-size: $regular-size;
+            padding-top: 20px;
+        }
+    }
+}
+
